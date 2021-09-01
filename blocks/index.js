@@ -1,0 +1,1 @@
+import './firstblock/index.js';
