@@ -1,3 +1,3 @@
 export function MyComponent(props) {
-  return <h2>my custom component: {props.text}</h2>;
+  return <h2 className='mycolor' >my color component: {props.text}</h2>;
 }

@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: my test plugin
+* Plugin Name: my test plugin1
 * Plugin URI: https://google.com/
 * Description: my test plugin
 * Version: 1.0.0
@@ -27,8 +27,7 @@ function mytheme_blocks_register() {
 //             'style'
 //             'editor_style'
         )
-
-
+    );
 }
 
 add_action('init', 'mytheme_blocks_register');

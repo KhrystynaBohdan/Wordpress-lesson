@@ -70,15 +70,15 @@
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__firstblock_index_js__ = __webpack_require__(1);
- // import './secondblock/index.js';
+
 
 /***/ }),
 /* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RichTextComponent__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MyCustomComponent__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RichTextComponent__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MyCustomComponent__ = __webpack_require__(3);
 
 var registerBlockType = wp.blocks.registerBlockType;
 var __ = wp.i18n.__; // import {RichText} from '@wordpress/editor';
@@ -131,16 +131,6 @@ registerBlockType('mytheme-blocks/firstblock', {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = MyComponent;
-function MyComponent(props) {
-  return wp.element.createElement("h2", null, "my custom component: ", props.text);
-}
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = MyRichText;
 var RichText = wp.editor.RichText;
 function MyRichText(props) {
@@ -150,6 +140,18 @@ function MyRichText(props) {
     onChange: props.changeFunction,
     value: props.content
   });
+}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = MyComponent;
+function MyComponent(props) {
+  return wp.element.createElement("h2", {
+    className: "mycolor"
+  }, "my color component: ", props.text);
 }
 
 /***/ })
