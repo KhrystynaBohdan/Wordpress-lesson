@@ -27,7 +27,8 @@ function mytheme_blocks_register() {
 //             'style'
 //             'editor_style'
         )
-    );
+
+
 }
 
 add_action('init', 'mytheme_blocks_register');
